@@ -1,0 +1,9 @@
+*/.DS_Store
+npm-debug.log
+.idea/*
+*/.idea
+*/.project
+data/*
+dist/*
+components/
+node_modules/

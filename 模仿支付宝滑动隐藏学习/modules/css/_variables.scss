@@ -1,0 +1,58 @@
+//Colors
+$gray-base:              #585858;
+$gray-dark:              #333333;
+$gray-light:             #808080;
+$gray-lighter:           #eeeeee;
+$gray-nwe-lighter:       #e0e0e0;
+
+$light:                  #f4f4f4;
+$white:                  #ffffff;
+$line-color:             #dddddd;
+
+$red:                    #ff6060;
+$yellow:                #fdc00f;
+$orange:                #f76c5e;
+$pink:                  #f45b69;
+$pink-light:           #ffeeee;
+$blue:                  #348ac7;
+$brand:                 #005C97;
+$teal:                  #0fa3b1;
+$cyan:                  #1ab99b;
+$green:                 #00cc99;
+
+$body-bg:                #f5f5f5;
+$body-width:             1200px;
+$index-section-width:    850px;
+$index-aside-width:      330px;
+
+$module-padding:         15px;
+$module-margin:          $module-padding;
+$text-color:             $gray-base;
+$link-color:             $gray-base;
+$link-hover-color:       #1e70bf;
+
+$font-size-xlarge:        15px;
+$font-size-large:         14px;
+$font-size-base:          13px;
+$font-size-small:         12px;
+$font-size-xsmall:        11px;
+
+$font-size-h1:            18px;
+$font-size-h2:            16px;
+$font-size-h3:            15px;
+$font-size-h4:            14px;
+$font-size-h5:            13px;
+$font-size-h6:            12px;
+
+$font-h1-lh:              28px;
+$font-h2-lh:              25px;
+$font-xlarge-lh:          23px;
+$font-large-lh:           22px;
+$font-base-lh:            20px;
+$font-small-lh:           19px;
+$font-xsmall-lh:          17px;
+
+//Icon
+$icon-font-path:          "../../fonts/";
+$icon-font-name:          "iconfont";
+$icon-font-svg-id:        $icon-font-name;

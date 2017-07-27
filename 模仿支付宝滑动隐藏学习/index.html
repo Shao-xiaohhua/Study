@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="address=no" name="format-detection"/>
+  <meta name="apple-mobile-web-app-capable" content="no" />
+
+  <title>沪e法</title>
+  <meta name="keywords" content="" />  
+  <meta name="description" content="" /> 
+  <meta name="author" content="HOMOLO"> 
+  <link rel="apple-touch-icon-precomposed" href="" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="" />
+  <link rel="stylesheet" href="css/common.scss">
+  <!--STYLE_PLACEHOLDER-->
+</head>
+<body class="theme-white">
+  <div class="statusbar-overlay"></div>
+  <!-- Panels overlay-->
+  <div class="panel-overlay"></div>
+  <div class="views">
+    <div class="view view-main">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <!-- We have home navbar without left link-->
+        <div class="center sliding">沪e法</div>
+        <div class="right">
+        </div>
+      </div>
+    </div>
+      <div class="pages navbar-through toolbar-through">
+        <div data-page="welcome" class="page">
+        </div>
+      </div>
+        <div class="toolbar">
+          <div class="toolbar-inner">
+            <a href="home.html" class="toolbar-item active"><i class="iconfont icon-interactive_fill"></i><span>咨询</span></a>
+            <a href="selected.html" class="toolbar-item"><i class="iconfont icon-star"></i><span>动态</span></a>
+            <a href="expert.html" class="toolbar-item"><i class="iconfont icon-group"></i><span>专家</span></a>
+            <a href="my.html" class="toolbar-item"><i class="iconfont icon-people"></i><span>我的</span><em class="new"></em></a>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="lib/mod.js"></script>
+  <script>
+
+    app = require('js/app');
+
+    app.set.init();
+
+
+    var myApp = app.framework.init();
+    var $$ = Dom7;
+  </script>
+  <!--SCRIPT_PLACEHOLDER-->
+</body>
+</html>
