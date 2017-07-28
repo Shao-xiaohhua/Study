@@ -18,9 +18,9 @@ var set = {
     // Add view
     var mainView = myApp.addView('.view-main', {
       // Because we use fixed-through navbar we can enable dynamic navbar
-	  dynamicNavbar: true,
-	  animatePages:true,
-	  swipeBackPageAnimateOpacity:false
+    dynamicNavbar: true,
+    animatePages:true,
+    swipeBackPageAnimateOpacity:false
     });
     var e = $$('.toolbar .toolbar-item');
     var iconFull = ['icon-interactive_fill', 'icon-star_fill', 'icon-group_fill', 'icon-people_fill'],
@@ -97,9 +97,10 @@ var set = {
         // ==================================
         var obj = {};
         var a = 0;
-        var shenme = ''
+        var shenme = '刚进来'
         var mashen = ''
         var initValue = $$('.page-content').scrollTop()
+        
         Object.defineProperty(obj,"newKey",{
           get:function (){
             //当获取值的时候触发的函数
@@ -132,15 +133,15 @@ var set = {
                 mashen = 'down'
               }
             }
+            initValue = value
+            $$('.opBox').find('span').css({opacity: getNumber});
           }
         });
         $$('.page-content').on('scroll', function (e) {
-            p = $$('.page-content').scrollTop()
+            p = $$(this).scrollTop()
             obj.newKey = p
-            $$('.opBox').find('span').css({opacity: getNumber});
-            setTimeout(function(){t = p;},1);
           });
-         $$(window).on('touchend', function (e) {
+         $$('page-content').on('touchend', function (e) {
           var number = 0
           if (kaiguan) {
             kaiguan = false
@@ -149,7 +150,7 @@ var set = {
                 if (mashen === 'show') {
                   getNumber = 1
                   console.log('caodayeaaaaa')
-                  $$('.page-content').scrollTop(0)
+                  $$(this).scrollTop(0)
                 } else if (mashen === 'down') {
                   getNumber = 0
                 }
@@ -158,7 +159,7 @@ var set = {
               }
             }, 0)
             bx = setInterval(function () {
-              var b = $$('.page-content').scrollTop();
+              var b = $$(this).scrollTop();
               if (b === 0) {
                 aaaSwite = false
                 kaiguan = true
