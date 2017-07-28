@@ -141,8 +141,9 @@ var set = {
             p = $$(this).scrollTop()
             obj.newKey = p
           });
-         $$('page-content').on('touchend', function (e) {
+         $$('.page-content').on('touchend', function (e) {
           var number = 0
+          var self = this
           if (kaiguan) {
             kaiguan = false
             tx = setInterval(function () {
@@ -159,16 +160,23 @@ var set = {
               }
             }, 0)
             bx = setInterval(function () {
-              var b = $$(this).scrollTop();
+              var b = $$(self).scrollTop();
+              console.log(b)
               if (b === 0) {
                 aaaSwite = false
                 kaiguan = true
                 getNumber = 1
-                $$('.opBox').find('span').css({opacity: getNumber});
+                $$('.opBox').find('span').css({opacity: 1});
                 clearInterval(tx);
                 clearInterval(bx);
+              } else {
+                number++
+                if (number === 10) {
+                  clearInterval(tx);
+                  clearInterval(bx);
+                }
               }
-            },10)
+            },100)
           };
          });
          $$(window).on('touchmove', function () {
